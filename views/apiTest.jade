@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    h1= title
+    p #{title2}
+    hr
+    label(for="serverAddress")  
+    input#serverAddressInput.form-control(type="text",name='serverAddress',placeholder='Enter Server Address')
+    br
+    hr
+    label(for="getstatuscodeInput")  
+    input#getstatuscodeInput.form-control(type="text",name='getstatuscodeInput',placeholder='Enter status Code')
+    button#getStatusCode.btn.btn-primary.btn-sm Get Status
+    br
+    br
+    label(for="setlatencyInput")
+    input#setlatencyInput.form-control(type="text",name='setlatencyInput',placeholder='Set Latency in ms')    
+    button#setLatency.btn.btn-primary.btn-sm Set Latency
+    br
+    hr
+    p #{logs}
